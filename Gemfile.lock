@@ -1,0 +1,28 @@
+PATH
+  remote: .
+  specs:
+    raw_presenter_plugin (1.0)
+      dry-inflector (~> 0.1)
+      nokogiri (>= 1.8.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dry-inflector (0.3.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.7)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    racc (1.6.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.0)
+  rake (~> 10.0)
+  raw_presenter_plugin!
+
+BUNDLED WITH
+   2.2.20
