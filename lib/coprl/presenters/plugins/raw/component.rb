@@ -12,17 +12,9 @@ module Coprl
 
           def initialize(content, **attribs, &block)
             super(type: :raw_block, **attribs, &block)
-            @content = validate_content(content)
+            @content = content
 
             expand!
-          end
-
-          private
-
-          def validate_content(content)
-            return if valid_html?(content)
-
-            raise_parameter_validation "The given string doesn't seem like a valid HTML block"
           end
         end
       end
