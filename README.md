@@ -25,9 +25,5 @@ plugin :raw_block
     
 Then you can render raw HTML/JS blocks using:
 `
-raw_block(html_string)
+raw_block html_string
 `
-
-
-
-## DSL

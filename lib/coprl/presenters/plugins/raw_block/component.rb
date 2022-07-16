@@ -3,12 +3,9 @@ require 'coprl/presenters/dsl/components/event_base'
 module Coprl
   module Presenters
     module Plugins
-      module Raw
+      module RawBlock
         class Component < DSL::Components::EventBase
-          DEFAULT_POSITION = :center
-
-          attr_accessor :content
-
+          attr_reader :content
 
           def initialize(content, **attribs, &block)
             super(type: :raw_block, **attribs, &block)
